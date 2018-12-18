@@ -1,0 +1,112 @@
+{
+    "400": {
+      "status": 200,
+      "code": 400,
+      "description": "잘못된 요청입니다.",
+      "message": "bad_request"
+    },
+    "401": {
+      "status": 200,
+      "code": 401,
+      "description": "로그인에 실패하였습니다.",
+      "message": "login_fail"
+    },
+    "1401": {
+      "status": 200,
+      "code": 400,
+      "description": "아이디가 중복됩니다.",
+      "message": "exist_id"
+    },
+    "1402": {
+      "status": 200,
+      "code": 400,
+      "description": "아이디가 존재하지 않습니다.",
+      "message": "not_signin"
+    },
+    "1403": {
+      "status": 200,
+      "code": 400,
+      "description": "비밀번호가 틀렸습니다.",
+      "message": "current_password_not_match"
+    },
+    "1404": {
+      "status": 200,
+      "code": 400,
+      "description": "비밀번호가 일치하지 않습니다",
+      "message": "new_password_not_match"
+    },
+    "1405": {
+      "status": 200,
+      "code": 400,
+      "description": "이미 승인 절차가 진행된 유저입니다.",
+      "message": "already_confirm_user"
+    },
+    "1406": {
+      "status": 200,
+      "code": 400,
+      "description": "존재하지 않는 유저입니다.",
+      "message": "untitled_user"
+    },
+    "1407": {
+      "status": 200,
+      "code": 400,
+      "description": "이미 등록된 티켓 있습니다.",
+      "message": "exist_ticket"
+    },
+    "1408": {
+      "status": 200,
+      "code": 400,
+      "description": "존재하지 않는 예약입니다.",
+      "message": "untitled_reservation"
+    },
+    "2401": {
+      "status": 200,
+      "code": 400,
+      "description": "잘못된 URL 접근입니다.",
+      "message": "bad_url"
+    },
+    "2402": {
+      "status": 200,
+      "code": 400,
+      "description": "잘못된 요청입니다.",
+      "message": "bad_request"
+    },
+    "9401": {
+      "status": 200,
+      "code": 400,
+      "description": "파라미터가 잘못되었습니다.",
+      "message": "invalid_parameter"
+    },
+    "9402": {
+      "status": 200,
+      "code": 403,
+      "description": "권한이 없습니다.",
+      "message": "do_not_have_permission"
+    },
+    "10401": {
+      "status": 200,
+      "code": 401,
+      "description": "만료된 인증 큰 입니다.",
+      "message": "expired_token"
+    },
+    "10403": {
+      "status": 200,
+      "code": 403,
+      "description": "잘못된 인증 방식입니다.",
+      "message": "invalid_authentication"
+    },
+    "500": {
+      "status": 500,
+      "code": 500,
+      "description": "서버 오류",
+      "message": "internal_server_error"
+    },
+    "8400": {
+      "status": false,
+      "message": "400_Error"
+    },
+    "9500": {
+      "status": false,
+      "message": "500_error"
+    }
+  }
