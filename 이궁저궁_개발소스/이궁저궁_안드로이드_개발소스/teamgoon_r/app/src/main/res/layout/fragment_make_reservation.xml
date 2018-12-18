@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 예약하기 프래그먼트 -->
+
+<LinearLayout
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".ui.gung_ticket.make_reservation.MakeReservationFragment">
+
+
+    <!-- 안내 문구 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="궁궐 선택하기"
+            android:textSize="@dimen/textSize_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!-- 뷰페이저 -->
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
+        android:id="@+id/viewpager_make_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pm10.library.CircleIndicator
+            android:layout_marginTop="10dp"
+            android:id="@+id/indicator_make_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:p_gap="15dp"
+            app:p_radius="6dp"
+            app:p_strokeWidth="0dp"
+            app:p_defaultColor="#BDBDBD"
+            app:p_selectedColor="@color/tabindicator1"
+            app:p_strokeColor="@color/background"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

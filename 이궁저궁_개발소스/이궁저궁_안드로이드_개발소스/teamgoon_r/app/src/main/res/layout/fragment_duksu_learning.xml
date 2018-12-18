@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#F9F9F9"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 안내 문구 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <TextView
+                android:id="@+id/title_learning_palace"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="덕수궁"
+                android:textSize="@dimen/textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="사진"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_sub"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="248dp">
+                    <ImageView
+                        android:id="@+id/first_img_duksu"
+                        android:layout_width="200dp"
+                        android:layout_height="248dp" />
+                    <RelativeLayout
+                        android:layout_alignParentRight="true"
+                        android:layout_width="202dp"
+                        android:layout_height="248dp">
+                        <ImageView
+                            android:id="@+id/second_img_duksu"
+                            android:layout_width="match_parent"
+                            android:layout_height="88dp" />
+                        <ImageView
+                            android:id="@+id/third_img_duksu"
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="151dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="위치"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textSize_sub"/>
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:background="@drawable/deoksugung_map"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="14dp"
+                        android:text="간단정보"
+                        android:textSize="@dimen/textSize_sub"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="41dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="운영시간"
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="9시-21시 (입장은 20시까지)"
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="41dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="휴궁일"
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:text="월요일 휴무"
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginBottom="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="설명"
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+                    <TextView
+                        android:id="@+id/explain_duksu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="55dp"
+                        android:text="인화문은 원래 덕수궁의 정문이었으나 중화전 건설로 궁궐이 확장되면서 사라졌습니다. 인화문은 고종이 아관파천 후 러시아 공사관에서 경운궁으로 돌아올 때 사용한 문입니다.\n
+ 경복궁에는 광화문이, 창덕궁에는 돈화문이, 경희궁에는 흥화문이, 창경궁에는 홍화문이 있듯이, 경운궁에도 ‘화(化)’자 돌림의 인화문(仁化門)이라는 정문이 있었습니다. 궁궐의 정문은 보통 남쪽에 있는 것으로 인화문 역시 경운궁 남쪽 궁궐 담장의 가운데 자리에 있었습니다.\n 하지만 1902년 무렵 남쪽으로 이웃하던 독일영사관 구역을 편입하고 궁궐 담장을 밖으로 늘리던 와중에 인화문은 해체되었습니다. 동쪽으로 난 대안문이 이미 궁궐의 정문 역할을 하고 있었으므로, 구태여 인화문을 새로 짓지 않았기 때문이었습니다."
+                        android:textStyle="bold"
+                        android:textColor="#707070"
+                        android:textSize="@dimen/learning_gung"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/above_shadow_2"></RelativeLayout>
+
+</RelativeLayout>

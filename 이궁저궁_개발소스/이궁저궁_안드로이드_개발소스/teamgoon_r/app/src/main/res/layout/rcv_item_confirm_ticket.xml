@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="327dp"
+    android:layout_height="190dp">
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="157dp"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:id="@+id/img_ticket_confirm_reservation"
+        android:background="@drawable/ticket_first_blue">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/ticket_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#2B2B2B"
+                android:textStyle="bold"
+                android:text="경복궁 석조전 대한제국 역사관 관람 16시 30분"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/qr_code"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                />
+            <RelativeLayout
+                android:layout_marginLeft="94dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="145dp"
+                android:layout_height="52dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ticket_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#0E0E0E"
+                    android:text="대인 3명"/>
+                <TextView
+                    android:id="@+id/ticket_date"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#0E0E0E"
+                    android:text="20180101 - 20180101"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_review_confirm_reservation"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/ticket_blue_review_button"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="11sp"
+        android:textColor="#FFFFFF"
+        android:text="후기작성"/>
+
+    <ImageView
+        android:id="@+id/ticket_fin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/review_fin"/>
+
+
+
+
+</RelativeLayout>

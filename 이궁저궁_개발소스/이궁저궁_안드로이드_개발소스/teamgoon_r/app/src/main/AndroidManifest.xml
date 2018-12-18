@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.jinyoungkim.teamgung">
+
+    <uses-sdk tools:overrideLibrary="kr.co.bootpay" />
+    <!-- 권한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 부트페이 연동 -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".util.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".ui.splash.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.main.MainActivity">
+        </activity>
+        <activity android:name=".ui.gung_ticket.TicketMainActivity" />
+        <activity android:name=".ui.gung_tour.TourMainActivity" />
+        <!-- 메타 데이터 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity android:name=".ui.gung_ticket.make_reservation.booking.BookingGyeongbokActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking.BookingChangdeokActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking.BookingChanggyeongActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking.BookingJongmyoActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking.BookingDuksuActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_normal.ChangdeokNormalActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.ChangdeokSpecial1Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.ChangdeokSpecial2Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_normal.GyeongbokNormalActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.GyeongbokSpecial1Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.GyeongbokSpecial2Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_normal.ChanggyeongNormalActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.ChanggyeongSpecial1Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.ChanggyeongSpecial2Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_normal.DuksuNormalActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.DuksuSpecial1Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_special.DuksuSpecial2Activity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.booking_normal.JongmyoNormalActivity" />
+        <activity android:name=".ui.gung_ticket.SpecialLookingActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.PayResultActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.viewpager_items.LoadingActivity" />
+        <activity android:name=".ui.gung_ticket.make_reservation.viewpager_items.Loading2Activity"></activity>
+    </application>
+
+</manifest>

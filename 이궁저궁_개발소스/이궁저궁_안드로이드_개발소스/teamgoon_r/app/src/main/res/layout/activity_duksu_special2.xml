@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gung_ticket.make_reservation.booking_special.DuksuSpecial2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--앱 바-->
+        <include
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            layout="@layout/actionbar_reservarion"/>
+
+
+
+    </RelativeLayout>
+
+    <!-- 안내 문구 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:text="인원 수 선택"
+            android:textSize="@dimen/textSize_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="대인"
+            android:textSize="@dimen/textSize_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/adult_minus_duksu_special"
+                    android:src="@drawable/minus_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/adult_number_duksu_special"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/reservation_info"
+                    android:text="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/adult_plus_duksu_special"
+                    android:src="@drawable/plus_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 안내 문구2 -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            android:text="특별권"
+            android:textSize="@dimen/textSize_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/duksu_special_btn1"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/deoksugung_booking_every_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/duksu_special_btn2"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/deoksugung_booking_always_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/duksu_special_btn3"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/deoksugung_booking_lunch_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/duksu_special_btn4"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/deoksugung_booking_time_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--하단 설명1-->
+                <LinearLayout
+                    android:id="@+id/duksu_special_layout1"
+                    android:visibility="gone"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/deoksugung_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/reservation_info"
+                            android:layout_marginLeft="10dp"
+                            android:text="대인 10000원 (4000원 절약)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="※ 구매일로부터 3개월 사용가능하고, 각 궁 별로 1회 사용가능 합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 한군데라도 방문 시, 환불이 불가능합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 창경궁 후원 특별관람의 경우, 선착순 교환이 필요합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--하단 설명2-->
+                <LinearLayout
+                    android:id="@+id/duksu_special_layout2"
+                    android:visibility="gone"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/deoksugung_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/reservation_info"
+                            android:layout_marginLeft="10dp"
+                            android:text="대인 10000원 (4000원 절약)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="※ 구매일로부터 1개월 사용가능합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 한군데라도 방문 시, 환불이 불가능합니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 창경궁만 상시입장이 가능한 관람권 입니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--하단 설명3-->
+                <LinearLayout
+                    android:id="@+id/duksu_special_layout3"
+                    android:visibility="gone"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/deoksugung_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/reservation_info"
+                            android:layout_marginLeft="10dp"
+                            android:text="대인 5000원"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="10sp"
+                            android:text="※ 구매일로부터 3개월 사용가능합니다. (10회 한정)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 점심시간중에만 사용이 가능합니다. (12:00-14:00)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 창경궁만 상시입장이 가능한 관람권 입니다."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--하단 설명4-->
+                <LinearLayout
+                    android:id="@+id/duksu_special_layout4"
+                    android:visibility="gone"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/reservation_info"
+                            android:text="50,000원"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/gyeongbokgung_button"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/reservation_info"
+                                android:text="100,000원"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:textSize="10sp"
+                                android:text="※ 동반 1인 무료"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/gyeongbokgung_button"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/deoksugung_button"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/changgyeonggung_button"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/noong_button"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:textSize="10sp"
+                            android:text="※ 점심시간중에만 사용이 가능합니다. (12:00-13:00)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:textSize="10sp"
+                            android:text="※ 구매일로부터 1년간 사용가능합니다. "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/payment_duksu_special"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@color/duksu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <TextView
+                android:text="결제하기"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textSize_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

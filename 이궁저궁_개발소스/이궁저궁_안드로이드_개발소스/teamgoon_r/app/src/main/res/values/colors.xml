@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="maincolor">#394E7E</color>
+    <color name="subcolor">#394E7E</color>
+    <color name="background">#F9F9F9</color>
+    <color name="tabindicator1">#EF5E5E</color>
+
+    <!-- 궁 별 테마색 -->
+    <color name="gyeongbok">#B54141</color>
+    <color name="changduk">#F9C210</color>
+    <color name="changgyeong">#C8D509</color>
+    <color name="duksu">#394E7E</color>
+    <color name="jongmyo">#60A682</color>
+    <color name="special">#FE8181</color>
+
+    <!-- 궁 투어 테마색 -->
+    <color name="going">#F9C210</color>
+</resources>

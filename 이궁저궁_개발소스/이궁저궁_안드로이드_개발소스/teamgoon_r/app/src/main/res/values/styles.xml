@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/maincolor</item>
+        <item name="colorPrimaryDark">@color/subcolor</item>
+        <item name="colorAccent">@color/subcolor</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>
+        <item name="android:checkboxStyle">@style/CheckboxStyle</item>
+    </style>
+
+    <style name="changdeok" parent="AppTheme" >
+        <item name="colorPrimary">@color/changduk</item>
+        <item name="colorAccent">@color/changduk</item>
+        <item name="colorPrimaryDark">@color/changduk</item>
+    </style>
+
+    <style name="changgyeong" parent="AppTheme" >
+        <item name="colorPrimary">@color/changgyeong</item>
+        <item name="colorAccent">@color/changgyeong</item>
+        <item name="colorPrimaryDark">@color/changgyeong</item>
+    </style>
+
+    <style name="gyeongbok" parent="AppTheme" >
+        <item name="colorPrimary">@color/gyeongbok</item>
+        <item name="colorAccent">@color/gyeongbok</item>
+        <item name="colorPrimaryDark">@color/gyeongbok</item>
+    </style>
+
+    <style name="duksu" parent="AppTheme" >
+        <item name="colorPrimary">@color/duksu</item>
+        <item name="colorAccent">@color/duksu</item>
+        <item name="colorPrimaryDark">@color/duksu</item>
+    </style>
+
+    <style name="jongmyo" parent="AppTheme" >
+        <item name="colorPrimary">@color/jongmyo</item>
+        <item name="colorAccent">@color/jongmyo</item>
+        <item name="colorPrimaryDark">@color/jongmyo</item>
+    </style>
+
+    <style name="special" parent="AppTheme" >
+        <item name="colorPrimary">@color/special</item>
+        <item name="colorAccent">@color/special</item>
+        <item name="colorPrimaryDark">@color/special</item>
+    </style>
+
+    <style name="TextViewStyle" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/nanum</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:fontFamily">@font/nanum</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/nanum</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/nanum</item>
+    </style>
+
+    <style name="CheckboxStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/nanum</item>
+    </style>
+
+
+</resources>

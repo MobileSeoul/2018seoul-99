@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--뷰페이저 아이템 간격 조정-->
+    <dimen name="vp_margin">-50dp</dimen>
+    <dimen name="vp_marginfix">32dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="textSize_sub">18sp</dimen>
+    <dimen name="reservation_info">15sp</dimen>
+
+    <dimen name="learning_gung">14sp</dimen>
+</resources>

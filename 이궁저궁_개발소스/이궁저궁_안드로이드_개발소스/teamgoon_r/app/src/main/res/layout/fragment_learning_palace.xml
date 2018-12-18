@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 궁궐 배워보기 프래그먼트 -->
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="540dp"
+    android:id="@+id/sliding_layout"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="59dp"
+    sothree:umanoShadowHeight="0dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.gung_tour.learning_palace.LearningPalaceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <FrameLayout
+
+        android:id="@+id/frame_learning_palace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+            <RelativeLayout
+                android:id="@+id/total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!-- 안내 문구 -->
+                    <LinearLayout
+                        android:background="#F9F9F9"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/title_learning_palace"
+
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+
+                            android:layout_gravity="center_vertical"
+                            android:text="궁 정보"
+                            android:textSize="@dimen/textSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:weightSum="5.5"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/btn_gyeongbok_learning"
+
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gyeongbokgung_foreigner"
+                            android:text="경복궁"
+                            android:textSize="30dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#ffffff"
+                          />
+                        <TextView
+                            android:id="@+id/btn_changdeok_learning"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/changdeokgung_foreigner"
+                            android:text="창덕궁"
+                            android:textSize="30dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#ffffff"
+                            />
+                        <TextView
+                            android:id="@+id/btn_changgyong_learning"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/changgyeonggung_foreigner"
+                            android:text="창경궁"
+                            android:textSize="30dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#ffffff"
+                            />
+                        <TextView
+                            android:id="@+id/btn_duksu_learning"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/deoksugung_foreigner"
+                            android:text="덕수궁"
+                            android:textSize="30dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#ffffff"
+                           />
+
+                        <TextView
+                            android:id="@+id/btn_jongmyo_learning"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/jongmyo_foreigner"
+                            android:text="종묘"
+                            android:textSize="30dp"
+                            android:paddingRight="20dp"
+                            android:textColor="#ffffff"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="23dp"
+                android:background="@drawable/above_shadow"></RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:background="@drawable/img_slidepanel"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/dragView">
+        <TextView
+            android:paddingTop="20dp"
+            android:text="전체 일정 확인하기"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_3_schedule_sorry_image"/>
+   </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
